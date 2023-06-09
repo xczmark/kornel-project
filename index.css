@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+body {
+  margin: 0 0 0 0;
+  min-width: 100%;
+  max-width: 100%;
+}
+.kepek {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+.kepek img {
+  height: 350px;
+}
+.kepek2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+.kepek2 img {
+  height: 350px;
+}
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+main p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 15px;
+}
+.jatekosok1 {
+  margin-right: auto;
+  list-style-type: none;
+  padding: 20px;
+  font-size: 25px;
+}
+.jatekosok2 {
+  margin-left: auto;
+  list-style-type: none;
+  padding: 20px;
+  font-size: 25px;
+}
+.sikerek {
+  list-style-type: none;
+  padding: 20px;
+  font-size: 20px;
+}
+
+#hamnav {
+  width: 100%;
+  background: #add8e6;
+}
+
+#hamitems {
+  display: flex;
+}
+#hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+#hamitems a:hover {
+  background: #ffffff;
+  color: black;
+}
+
+#hamnav label, #hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+
+  #hamnav label {
+    display: inline-block;
+    color: white;
+    background: #add8e6;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  #hamitems {
+    display: none;
+  }
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+  }
+}
